@@ -25,11 +25,15 @@ public class MaquinaExpendedoraSimple {
     }
     
      public MaquinaExpendedoraSimple(int precioDelBillete, String destino) {
-        precioBillete = precioDelBillete; //El precio del billete es 20 euros fijos. 
+        precioBillete = precioDelBillete;  
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
         estacionOrigen = "León"; //Definimos ya en el código un Origien FIJO
         estacionDestino = destino; //Definimos un destino fijo.
+    }
+    
+    public int getTotalDineroAcumulado () {
+        return totalDineroAcumulado;
     }
 
     /**
