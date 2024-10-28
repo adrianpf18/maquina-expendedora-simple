@@ -23,6 +23,14 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "León"; //Definimos ya en el código un Origien FIJO
         estacionDestino = "Madrid"; //Definimos un destino fijo.
     }
+    
+     public MaquinaExpendedoraSimple(int precioDelBillete, String destino) {
+        precioBillete = precioDelBillete; //El precio del billete es 20 euros fijos. 
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+        estacionOrigen = "León"; //Definimos ya en el código un Origien FIJO
+        estacionDestino = destino; //Definimos un destino fijo.
+    }
 
     /**
      * Devuelve el precio del billete
